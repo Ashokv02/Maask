@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAASK - Chatbot Experiment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./images/Company__logo.jpg"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body
+    class="bg-gradient-to-b from-gray-900 via-gray-800 to-black text-gray-100 font-sans"
+  >
+    <!-- Navbar -->
+    <nav
+      class="fixed w-full top-0 z-50 bg-gradient-to-r from-purple-700/30 via-indigo-700/30 to-pink-500/30 backdrop-blur-md shadow-lg"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center"
+      >
+        <img src="./images/MAASK_LOGO.png" alt="" class="w-32" />
+
+        <ul class="hidden md:flex space-x-8 text-gray-300">
+          <li>
+            <a href="#home" class="hover:text-pink-400 transition">Home</a>
+          </li>
+          <li>
+            <a href="#missionBtn" class="hover:text-pink-400 transition"
+              >Our Mission</a
+            >
+          </li>
+           <li>
+            <a href="#service" class="hover:text-pink-400 transition"
+              >Service</a
+            >
+          </li>
+          <li>
+            <a href="#milestone" class="hover:text-pink-400 transition"
+              >Milestone</a
+            >
+          </li>
+          <li>
+            <a href="#team" class="hover:text-pink-400 transition">Our Team</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-pink-400 transition"
+              >Contact</a
+            >
+          </li>
+           
+        </ul>
+
+         <button class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-purple-600 hover:to-pink-500 px-6 py-2 rounded-lg text-white shadow-lg transition-transform transform hover:scale-105"
+      >Sign In</button>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header
+      id="home"
+      class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-purple-900/60 to-black pt-24"
+    >
+      <h2
+        class="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 drop-shadow-lg mb-4"
+      >
+        Welcome to MAASK <br /><span class="text-3xl">Chatbot Experiment platform</span>
+      </h2>
+      <p class="text-gray-300 text-lg max-w-2xl mb-8">
+        Make a chatbot the way you like
+We intend to change the face of the approach towards chatbots in the time of advanced artificial intelligence
+      </p>
+      <a
+        href="#mission"
+        class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-purple-600 hover:to-pink-500 px-6 py-3 rounded-lg text-white shadow-lg transition-transform transform hover:scale-105"
+      >
+       Discover more
+      </a>
+    </header>
+
+    <section class="py-20 bg-gradient-to-b from-black via-gray-900 to-gray-800">
+      <div class="w-full flex flex-col items-center text-white font-sans">
+
+  <!-- Mission Vision Buttons -->
+  <div id="missionBtn" class="flex space-x-4 mt-10 mb-6">
+    <button 
+      id="missionBtn" 
+      
+      class="grayscale hover:grayscale-0 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-purple-600 hover:to-pink-500 px-6 py-2 rounded-lg text-white shadow-lg transition-transform transform hover:scale-105"
+      onclick="showSection('mission')"  
+    >
+      Mission
+    </button>
+
+    <button
+      id="visionBtn"
+     class=" grayscale hover:grayscale-0 bg-gradient-to-r  from-pink-500 to-purple-600 hover:from-purple-600 hover:to-pink-500 px-6 py-2 rounded-lg text-white shadow-lg transition-transform transform hover:scale-105"
+     onclick="showSection('vision')"
+    >
+      Vision
+    </button>
+  </div>
+
+  <!-- Mission Section -->
+  <div id="mission" class="max-w-xl text-center">
+    <h2  class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500 mb-6"
+        >Our Mission</h2>
+    <p class="text-gray-300">
+      We provide a professional environment for all the users to build and experiment on high quality chatbots which are Human-Centred.
+
+    </p>
+  </div>
+
+  <!-- Vision Section (hidden by default) -->
+  <div id="vision" class="max-w-xl text-center hidden">
+    <h2  class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500 mb-6"
+        >Our Vision</h2>
+    <p class="text-gray-300">
+      Elevating the user interaction into the next level by creating a bridge between the research and real-world chatbots. We intend to make the human-AI conversation simple and elegant.
+    </p>
+  </div>
+</div>
+    </section>
+
+
+    <!-- our solution -->
+    <section id="service" class="p-10">
+      <main class="max-w-6xl mx-auto p-6">
+          <!-- Heading with gradient text -->
+          <header class="mb-8 text-center">
+             <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500 mb-6 p-2">
+          A Playground for Building Smart Conversations
+          </h1>
+          
+</header>
+
+
+<!-- 4-grid container -->
+    <section class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+          <!-- Card 1 -->
+          <article class=" flex flex-col items-center justify-center gap-8 bg-slate-800/60 rounded-2xl p-4 shadow-lg ring-1 ring-slate-700 hover:ring-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-20 rounded-2xl hover:bg-gradient-to-r from-pink-400 to-purple-500 ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+          </svg>
+        <h4 class="pb-1 text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500">Bring Your Ideas to Life</h4>
+          <p class=" text-center text-lg text-slate-300">Turn your imagination into a smart, interactive chatbot. Whatever you dream up you can build it.</p>
+          </article>
+
+           <!-- Card 2 -->
+          <article class=" flex flex-col items-center justify-center gap-8 bg-slate-800/60 rounded-2xl p-4 shadow-lg ring-1 ring-slate-700 hover:ring-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-20 rounded-2xl hover:bg-gradient-to-r from-pink-400 to-purple-500">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+          </svg>
+        <h4 class="pb-1 text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500">Create Your Chatbot
+        </h4>
+          <p class=" text-center text-lg text-slate-300">Design intelligent assistants tailored to your vision. From personality to purpose, make it uniquely yours.
+        </p>
+          </article>
+
+           <!-- Card 3 -->
+          <article class=" flex flex-col items-center justify-center gap-8 bg-slate-800/60 rounded-2xl p-4 shadow-lg ring-1 ring-slate-700 hover:ring-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-20 rounded-2xl hover:bg-gradient-to-r from-pink-400 to-purple-500">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75" />
+          </svg>
+        <h4 class="pb-1 text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500">Experiment & Evolve
+        </h4>
+          <p class=" text-center text-lg text-slate-300">Talk to your creation, refine its responses and enhance its abilities. Every interaction makes it smarter.
+</p>
+          </article>
+
+           <!-- Card 4 -->
+          <article class=" flex flex-col items-center justify-center gap-8 bg-slate-800/60 rounded-2xl p-4 shadow-lg ring-1 ring-slate-700 hover:ring-2 ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-20  rounded-2xl hover:bg-gradient-to-r from-pink-400 to-purple-500">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z" />
+          </svg>
+        <h4 class="pb-1 text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500">Customize Everything</h4>
+          <p class=" text-center text-lg text-slate-300">
+You can customize every detail like colors, Ul, personality and more on your chatbot.</p>
+          </article>
+
+
+    </section>
+    </main>
+  </section>
+
+
+
+    <!--Milestones -->
+    <section
+      id="milestone"
+      class="py-20 bg-gradient-to-r from-gray-900 via-gray-800 to-black"
+    >
+      <div class="max-w-6xl mx-auto text-center px-6">
+        <h3
+          class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 mb-12"
+        >
+          Milestones
+        </h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-pink-500/40 transition-transform hover:-translate-y-2"
+          >
+            <h4 class="text-2xl font-semibold text-white mb-2">October 2025</h4>
+            <p class="text-gray-400">
+              Team MAASK founded, the vision of an AI-driven chatbot began.
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-pink-500/40 transition-transform hover:-translate-y-2"
+          >
+            <h4 class="text-2xl font-semibold text-white mb-2">
+              November 2025
+            </h4>
+            <p class="text-gray-400">
+               Come up with a prototype of chatbot experiment platform
+
+
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-purple-500/40 transition-transform hover:-translate-y-2"
+          >
+            <h4 class="text-2xl font-semibold text-white mb-2">
+              December 2025
+            </h4>
+            <p class="text-gray-400">
+              
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-pink-500/40 transition-transform hover:-translate-y-2"
+          >
+            <h4 class="text-2xl font-semibold text-white mb-2">Januray 2026</h4>
+            <p class="text-gray-400">
+              
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-pink-500/40 transition-transform hover:-translate-y-2"
+          >
+            <h4 class="text-2xl font-semibold text-white mb-2">
+              Feburary 2026
+            </h4>
+            <p class="text-gray-400">
+              
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-pink-500/40 transition-transform hover:-translate-y-2"
+          >
+            <h4 class="text-2xl font-semibold text-white mb-2">
+              March 2026
+            </h4>
+            <p class="text-gray-400">
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team -->
+    <section
+      id="team"
+      class="py-20 bg-gradient-to-b from-black via-gray-900 to-gray-800"
+    >
+      <div class="max-w-6xl mx-auto text-center px-6">
+        <h3
+          class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 mb-12"
+        >
+          Our Team
+        </h3>
+        <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <!-- Member 1 -->
+          <div
+            class="bg-gradient-to-b from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-pink-500/40 transform hover:-translate-y-2 transition"
+          >
+            <img
+              src="./images/Miduna.jpg"
+              alt="Team Member Miduna"
+              class="rounded-2xl mx-auto mb-4 shadow-md border-2 border-purple-400 filter grayscale hover:grayscale-0 transition duration-500 ease-in-out"
+            />
+            <h4 class="text-xl font-semibold text-white">Miduna Kaviya</h4>
+            <p class="text-gray-400">Frontend Developer</p>
+          </div>
+
+          <!-- Member 2 -->
+          <div
+            class="bg-gradient-to-b from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-purple-500/40 transform hover:-translate-y-2 transition"
+          >
+            <img
+              src="./images/Sneha.jpg"
+              alt="Team Member Sneha"
+              class="rounded-2xl mx-auto mb-4 shadow-md border-2 border-purple-400 filter grayscale hover:grayscale-0 transition duration-500 ease-in-out"
+            />
+            <h4 class="text-xl font-semibold text-white">Sneha</h4>
+            <p class="text-gray-400">Backend Developer</p>
+          </div>
+
+          <!-- Member 3 -->
+          <div
+            class="bg-gradient-to-b from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-pink-400/40 transform hover:-translate-y-2 transition"
+          >
+            <img
+              src="./images/Ashok.jpg"
+              alt="Team Member Ashok"
+              class="rounded-2xl mx-auto mb-4 shadow-md border-2 border-purple-400 filter grayscale hover:grayscale-0 transition duration-500 ease-in-out"
+            />
+            <h4 class="text-xl font-semibold text-white">Ashok</h4>
+            <p class="text-gray-400">UI | UX Designer</p>
+          </div>
+
+          <!-- Member 4 -->
+          <div
+            class="bg-gradient-to-b from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-purple-400/40 transform hover:-translate-y-2 transition"
+          >
+            <img
+              src="./images/Adharsh.jpg"
+              alt="Team Member Adharsh"
+              class="rounded-2xl mx-auto mb-4 shadow-md border-2 border-purple-400 filter grayscale hover:grayscale-0 transition duration-500 ease-in-out"
+            />
+            <h4 class="text-xl font-semibold text-white">Adarsh</h4>
+            <p class="text-gray-400">Project Lead</p>
+          </div>
+
+          <!-- Member 5 -->
+          <div
+            class="bg-gradient-to-b from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-pink-400/40 transform hover:-translate-y-2 transition"
+          >
+            <img
+              src="./images/Komal.jpg"
+              alt="Team Member komal"
+              class="rounded-2xl mx-auto mb-4 shadow-md border-2 border-purple-400 filter grayscale hover:grayscale-0 transition duration-500 ease-in-out"
+            />
+            <h4 class="text-xl font-semibold text-white">Komal</h4>
+            <p class="text-gray-400">Data Engineer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Section -->
+    <section
+      id="contact"
+      class="py-20 bg-gradient-to-b from-gray-900 via-black to-gray-800"
+    >
+      <div class="max-w-4xl mx-auto text-center px-6">
+        <h3
+          class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500 mb-8"
+        >
+          Get in Touch
+        </h3>
+        <p class="text-gray-300 mb-8">
+          Have questions or ideas? Let's collaborate and build the future of AI
+          together.
+        </p>
+        <form class="grid md:grid-cols-2 gap-6">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="p-3 rounded bg-gray-800 border border-gray-700 focus:border-pink-400 focus:outline-none text-gray-200"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="p-3 rounded bg-gray-800 border border-gray-700 focus:border-pink-400 focus:outline-none text-gray-200"
+          />
+          <textarea
+            placeholder="Your Message"
+            class="md:col-span-2 p-3 rounded bg-gray-800 border border-gray-700 focus:border-pink-400 focus:outline-none text-gray-200 h-32"
+          ></textarea>
+          <button
+            type="submit"
+            class="md:col-span-2 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-purple-600 hover:to-pink-500 text-white py-3 rounded-lg shadow-lg hover:shadow-pink-500/30 transition transform hover:scale-105"
+          >
+            Send Message
+          </button>
+        </form>
+
+        <div
+          class="pt-20 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500 mb-8 grayscale hover:grayscale-0"
+        >
+          <h3>
+            Reach Us Through</h3> <br />
+            <i class="fa-brands fa-linkedin cursor-pointer"></i>
+            <i class="fa-brands fa-whatsapp cursor-pointer"></i>
+            <i class="fa-brands fa-x-twitter cursor-pointer"></i>
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6 border-gray-700 text-gray-400">
+      <section class="bg-black">
+        <img src="./images/MAASK_LOGO.png" alt="Team Logo " class="w-32" />
+        <a
+          href="./Imprint.html"
+          class="hover:underline hover:text-white px-3 mb-2 cursor-pointer"
+        >
+          Imprint
+        </a>
+        <p class="hover:underline hover:text-white px-3 cursor-pointer">
+          Terms & condition
+        </p>
+      </section>
+
+      <section class="bg-black p-10 text-center">
+        <p>© 2025 MAASK. All rights reserved.</p>
+        <p>
+          Disclaimer: This website does not belong to real company. It is a Planspiel Web Engineering project at University of Technology Chemnitz.
+        </p>
+      </section>
+    </footer>
+  </body>
+
+  <script>
+  function showSection(section) {
+    const mission = document.getElementById("mission");
+    const vision = document.getElementById("vision");
+
+    const missionBtn = document.getElementById("missionBtn");
+    const visionBtn = document.getElementById("visionBtn");
+
+    if (section === "mission") {
+      mission.classList.remove("hidden");
+      vision.classList.add("hidden");
+
+     
+    } else {
+      mission.classList.add("hidden");
+      vision.classList.remove("hidden");
+
+    }
+  }
+
+
+
+</script>
+</html>
